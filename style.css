@@ -1,0 +1,283 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("IMG_20260227_132449_580.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #cfd8e3;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* HOME */
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.home-section h1 {
+  font-size: 52px;
+}
+
+
+.name {
+  font-size: 52px;
+  font-weight: 700;
+  color: white;
+  margin-top: 10px;
+}
+
+.home-section h1 span {
+  color: #1f2226;
+}
+
+.home-section h3 {
+  font-size: 26px;
+  margin-top: 10px;
+}
+
+/* ABOUT SECTION */
+.about {
+  display: flex;
+  justify-content: center;
+  padding: 120px 20px 60px;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 900px;
+  width: 100%;
+}
+
+.about-image img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 6px solid grey;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.about-text {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.about-text h2 {
+  color: #white;
+  margin-bottom: 10px;
+}
+
+/* ABOUT INFO BOXES */
+.about-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-info div {
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  border-radius: 12px;
+  width: 260px;
+}
+
+.skills-title, .school-info h3 {
+  color: #white;
+}
+
+.school-info p strong {
+  color: grey;
+}
+
+.skills-list {
+  list-style: none;   
+  padding-left: 0;
+  margin-top: 8px;
+}
+
+/* GALLERY */
+.gallery h2 {
+  text-align: center;
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.slider-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.slider-container input {
+  display: none;
+}
+
+.slider-card {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+input:checked + label {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+}
+
+/* SAMPLE IMAGES (palitan sa sarili mong image files) */
+.slider-card[for="c1"] { background-image: url("IMG_20260227_132447_453.jpg"); }
+.slider-card[for="c2"] { background-image: url("IMG_20260227_132411_951.jpg"); }
+.slider-card[for="c3"] { background-image: url("IMG_20260227_132414_264.jpg"); }
+.slider-card[for="c4"] { background-image: url("IMG_20260227_132420_453.jpg"); }
+.slider-card[for="c5"] { background-image: url("IMG_20260227_132438_234.jpg"); }
+.slider-card[for="c6"] { background-image: url("IMG_20260227_134234_761.jpg"); }
+.slider-card[for="c7"] { background-image: url("IMG_20260227_132451_308.jpg"); }
+.slider-card[for="c8"] { background-image: url("IMG_20260227_134334_347.jpg"); }
+.slider-card[for="c9"] { background-image: url("IMG_20260227_132449_580.jpg"); }
+.slider-card[for="c10"] { background-image: url("IMG_20260227_134350_456.jpg"); }
+.slider-card[for="c11"] { background-image: url("IMG_20260227_134336_086.jpg"); }
+.slider-card[for="c12"] { background-image: url("IMG_20260227_132418_776.jpg"); }
+.slider-card[for="c13"] { background-image: url("IMG_20260227_132426_441.jpg"); }
+.slider-card[for="c14"] { background-image: url("IMG_20260227_132441_962.jpg"); }
+.slider-card[for="c15"] { background-image: url("IMG_20260227_132422_901.jpg"); }
+
+/* CONTACT */
+.contact {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 12px;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  flex: 1;
+  min-width: 250px;
+}
+
+.info-box a {
+  color: #fff;
+  font-weight: 500;
+}
+
+.info-box span {
+  width: 50px;
+  height: 50px;
+  color: #white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.info-box h4 {
+  margin: 10px 0 5px;
+  color: #8f8b39;
+}
+
+.info-box p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.form {
+  background: #111;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  background: #1a1a1a;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.form textarea {
+  height: 150px
+
